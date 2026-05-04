@@ -4,23 +4,23 @@ def display_main_menu():
     print("Enter some numbers separated by commas (e.g. 5, 67, 32)")
 
 def calc_average(temperature_list):
-    return sum(temperature_list / len(temperature_list))
+    return sum (temperature_list) / len(temperature_list)
 
 def get_user_input():
     user_input = input("Enter temperatures: ")
     string_list = user_input.split(",")
     temperature_list = [float(x.strip()) for x in string_list] 
-    return float_list
+    return temperature_list
 
-def find_min_max():
+def find_min_max(temperature_list):
     return [min(temperature_list), max(temperature_list)]
 
-def sort_temperature():
+def sort_temperature(temperature_list):
     return sorted(temperature_list)
 
-def calc_median_temperature():
+def calc_median_temperature(temperature_list):
     sorted_list = sorted(temperature_list)
-    n - len(sorted_list)
+    n = len(sorted_list)
     middle = n // 2
     if n % 2 == 0:
         return (sorted_list[middle - 1] + sorted_list[middle]) / 2
